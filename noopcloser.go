@@ -8,7 +8,7 @@ import (
 // close.  This is useful for creating Body for http.Response
 // from a BufferString.
 type NoopCloser struct {
-	io.Reader
+	Reader io.Reader
 }
 
 // Close does not thing and never fails.
